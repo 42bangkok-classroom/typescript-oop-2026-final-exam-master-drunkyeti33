@@ -17,7 +17,9 @@ export class PurchaseService {
     };
   }
   findOne(id: number): Purchase[] {
-    if (!id) {
+    const tryfind = this.findAll;
+    const found = tryfind.find((p) => p.id === id);
+    if (!tryfind) {
       return {
         success: false,
         data: null,
