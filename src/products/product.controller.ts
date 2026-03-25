@@ -6,7 +6,7 @@ export class ProductController {
   constructor(private readonly productService: ProductService) {}
 
   @Get()
-  getHello(): string {
+  getHello(): void {
     return this.productService.findAll();
   }
 }
