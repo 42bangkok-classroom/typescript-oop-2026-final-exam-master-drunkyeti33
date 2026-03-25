@@ -16,4 +16,13 @@ export class PurchaseService {
       message: 'Fetched purchases successfully',
     };
   }
+  findOne(id: number): Purchase[] {
+    if (!id) {
+      return {
+        success: false,
+        data: null,
+        message: 'Purchase with id 999 not found',
+      };
+    }
+  }
 }
