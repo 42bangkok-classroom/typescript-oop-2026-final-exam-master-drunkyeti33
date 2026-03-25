@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ProductModule } from '../src/products/product.module';
+import { PurchaseModule } from './purchases/purchase.module';
 import { APP_FILTER } from '@nestjs/core';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
