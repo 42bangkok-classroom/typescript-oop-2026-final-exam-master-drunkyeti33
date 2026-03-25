@@ -7,6 +7,6 @@ export class ProductController {
 
   @Get()
   getHello(): void {
-    return this.productService.findAll();
+    console.log(this.productService.findAll());
   }
 }
